@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="to-do" class="box">
+        <h4>ToDo</h4>
+        <div class="item" draggable="true">
+          <p class="item-text">learn html</p>
+          <span id="edit" class="edit-item">🖋️</span>
+          <span class="del-item">X</span>
+        </div>
+        <!-- <div class="item" draggable="true">
+          <p class="item-text">learn css</p>
+          <span class="del-item">X</span>
+        </div> -->
+      </div>
+      <div id="in-progress" class="box">
+        <h4>In Progress</h4>
+      </div>
+      <div id="done" class="box">
+        <h4>Done</h4>
+      </div>
+      <button id="btn">Add Task</button>
+      <div id="add-mondal">
+        <div class="header">
+          <p>Add Task</p>
+          <button class="close-add-mondal">❌</button>
+        </div>
+        <input id="add-input" type="text" placeholder="Enter here" />
+        <button id="add-btn">Add</button>
+      </div>
+      <div id="edit-mondal">
+        <div class="header">
+          <p>Edit Task</p>
+          <button class="close-edit-mondal">❌</button>
+        </div>
+        <input id="edit-input" type="text" placeholder="Enter here" />
+        <button id="edit-btn">Edit</button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </body>
+  <script src="app.js"></script>
+</html>
